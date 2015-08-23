@@ -11,7 +11,7 @@ Using its embedded accelerometer and gyroscope, it was captured 3-axial linear a
 
 * run_analysis.R
 
-The run_analysis function contains only one argument that is the directory in which the files downloaded from the following link <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> are saved. When downloading the files a folder with the name UCI HAR Dataset will be created, so it is important that the working directory is set to that folder before using the run_analysis function. 
+The run_analysis function contains only one argument that is the directory in which the files downloaded from the following link <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> are saved. **When downloading the files a folder with the name UCI HAR Dataset will be created, so it is important that the working directory is set to that folder before using the run_analysis function.** 
 
 By the use of the script run_analysis.R the two data sets (training data and test data) are merged in order to obtain one data set and then get a data set with the mean of some specific measurements.
 

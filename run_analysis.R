@@ -11,7 +11,7 @@ run_analysis <- function(directory) {
   if(grep("UCI HAR Dataset", directory) == 1) {
     directory <- ("./UCI HAR Dataset/")
   }
-
+  
 # Read the files that have been downloaded into the directory
   subtest <- read.table("./test/subject_test.txt")
   Xtest <- read.table("./test/X_test.txt")
@@ -84,10 +84,10 @@ run_analysis <- function(directory) {
   
 ## Create a txt file with the summarized data set
   write.table(final, file ="./CourseProject_final.txt", 
-              append = TRUE, row.names = FALSE)
-
+              append = FALSE, row.names = FALSE)
+  
 ## Showing the result
-    CourseProject_final <- read.table("./CourseProject_final.txt", header = TRUE)
-    View(CourseProject_final)
-
+  CourseProject_final <- read.table("./CourseProject_final.txt", header = TRUE)
+  View(CourseProject_final)
+  
 }
