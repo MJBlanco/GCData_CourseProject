@@ -2,15 +2,8 @@
 ## the accelerometers from the Samsung Galaxy S smartphone
 ## (see a full description http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-run_analysis <- function(directory) {
-  
-## 'directory' is a character vector of length 1 indicating
-## the location of the files downloaded from the web
-  
 # Set working directory
-  if(grep("UCI HAR Dataset", directory) == 1) {
-    directory <- ("./UCI HAR Dataset/")
-  }
+  setwd("./UCI HAR Dataset")
   
 # Read the files that have been downloaded into the directory
   subtest <- read.table("./test/subject_test.txt")
@@ -89,5 +82,4 @@ run_analysis <- function(directory) {
 ## Showing the result
   CourseProject_final <- read.table("./CourseProject_final.txt", header = TRUE)
   View(CourseProject_final)
-  
-}
+

@@ -23,7 +23,7 @@ In order to select only measurements on mean and standarde deviation it is neces
 
 Then the activity labels are added in order to replace the activity codes (number from 1 to 6) with the activity_labels of the original data set.
 
-The final data set summarizes the mean of the measurements selected by activity and by subject, obtaining a data frame of 180 rows (plus header) and 88 columns. The resulting file is saved in the working directory by the name CourseProject_final.txt.
+The final data set summarizes the mean of the measurements selected by activity and by subject, obtaining a data frame of 180 rows (plus header) and 88 columns. The resulting file is saved in the UCI HAR Dataset folder of the working directory by the name CourseProject_final.txt.
 
 
 With regards to the features selected for the final database please see the extract of the features_info.txt file:
