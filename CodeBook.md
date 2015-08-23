@@ -1,5 +1,5 @@
 #DATA DICTIONARY#
-# Samsung Accelerometers Data#
+### Samsung Accelerometers Data#
 
 
 ----------
@@ -66,13 +66,13 @@ std(): Standard deviation"*
 
 The variables included in the CourseProject_final.txt file are listed below.
 
-#### Identifier
+#### Identifiers
 
 •	activity 18 | Types of Activities
 
 •	subject 2 | |ID of subject | 1 .. 30 Unique identifier per subject
 
-#### Measurement
+#### Measurements
 
 •	tBodyAcc-mean()-X | mean of time body accelerometer signal - axial sign X
 
