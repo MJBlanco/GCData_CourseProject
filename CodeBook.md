@@ -4,6 +4,8 @@
 
 ----------
 
+### Original Data set
+
 The original data set downloaded from the link indicated in the README.md file includes the following files:
 
 - 'README.txt'
@@ -17,6 +19,8 @@ The original data set downloaded from the link indicated in the README.md file i
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
+### Data Process
+
 The sets to be merged are X_train, X_test, y_train, y_test, subject_train and subject_test. Labels for each measurement are added from the features files. 
 
 In order to select only measurements on mean and standarde deviation it is necessary to remove duplicate columns and then apply the select function. As this is a function of the dplyr package, the run_analysis script already includes the installation of the package and also calls it.
@@ -25,6 +29,7 @@ Then the activity labels are added in order to replace the activity codes (numbe
 
 The final data set summarizes the mean of the measurements selected by activity and by subject, obtaining a data frame of 180 rows (plus header) and 88 columns. The resulting file is saved in the UCI HAR Dataset folder of the working directory by the name CourseProject_final.txt.
 
+### Variables 
 
 With regards to the features selected for the final database please see the extract of the features_info.txt file:
 
@@ -61,9 +66,13 @@ std(): Standard deviation"*
 
 The variables included in the CourseProject_final.txt file are listed below.
 
+#### Identifier
+
 •	activity 18 | Types of Activities
 
 •	subject 2 | |ID of subject | 1 .. 30 Unique identifier per subject
+
+#### Measurement
 
 •	tBodyAcc-mean()-X | mean of time body accelerometer signal - axial sign X
 
