@@ -9,11 +9,13 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 Using its embedded accelerometer and gyroscope, it was captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
-By the use of the script run_analysis.R the two data sets (training data and test data) are merged in order to obtain one data set. 
+By the use of the script run_analysis.R the two data sets (training data and test data) are merged in order to obtain one data set and then get a data set with the mean of some specific measurements.
 
 The run_analysis function contains only one variable that is the directory in which the files downloaded from the following link <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> are saved. 
 
-With this function only the measurements on the mean and standard deviation for each measurement are selected. To accomplish this the run_analysis.R script includes the installation of the dplyr package in order to use the formula "select".
+Then, the data sets for all volunteers are merged by the use of cbind and rbind functions. Also the names of columns are added in order to identify each variable correctly.
+
+With the run_analysis function only the columns with the measurements on the mean and standard deviation for each measurement are selected. To accomplish this the run_analysis.R script includes the installation of the dplyr package in order to use the formula "select".
 
 After that, the descriptive name for each activity is assigned in order to avoid numerical codes.
 
